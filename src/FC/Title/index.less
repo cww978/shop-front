@@ -1,0 +1,18 @@
+.custom-title{
+  color: #333333;
+  font-size: 18px;
+  position: relative;
+  z-index: 0;
+  display: inline-block;
+  font-weight: 500;
+}
+.custom-title::after{
+  content: '';
+  z-index: -1;
+  position: absolute;
+  bottom: 0;
+  height: 10px;
+  width: 100%;
+  left: 0;
+  background: linear-gradient(to right, orange 0%, rgba(orange, 0) 100%);
+}
